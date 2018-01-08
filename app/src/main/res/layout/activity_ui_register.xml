@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b43c3c"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="250dip"
+            android:layout_height="180dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold|italic"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textColor="#f3f3f3"
+            android:text="Daily Tracker"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_signup_email"
+                android:layout_width="300dip"
+                android:layout_height="35dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/rounded_box_white"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+
+            <EditText
+                android:id="@+id/txt_signup_name"
+                android:layout_width="300dip"
+                android:layout_height="35dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/rounded_box_white"
+                android:hint="Username"
+                android:inputType="textCapWords"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/txt_signup_password"
+                android:layout_width="300dip"
+                android:layout_height="35dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/rounded_box_white"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+
+            <EditText
+                android:id="@+id/txt_signup_confirm_password"
+                android:layout_width="300dip"
+                android:layout_height="35dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/rounded_box_white"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <Spinner
+                android:id="@+id/spinnerProfile"
+                android:layout_width="300dip"
+                android:layout_height="35dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/rounded_box_white"
+                android:hint="Select Role"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/btn_signup_register"
+                android:layout_width="300dip"
+                android:layout_height="35dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/rounded_box_white"
+                android:text="Register"
+                android:textColor="#dd0000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/btn_signup_signup_fb"-->
+                <!--android:layout_width="300dip"-->
+                <!--android:layout_height="35dip"-->
+                <!--android:layout_marginTop="5dip"-->
+                <!--android:background="@drawable/rounded_box_fb"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dip"-->
+                    <!--android:src="@drawable/image_fb" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="1dip"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="6dip"-->
+                    <!--android:layout_marginLeft="10dip"-->
+                    <!--android:layout_marginTop="6dip"-->
+                    <!--android:background="#ffffff" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Sign Up with Facebook"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/btn_signup_already_registered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:text="Already have an account? Login"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

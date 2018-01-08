@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b43c3c"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:weightSum="10"
+    tools:context="deakin.com.example.healthbot.Activities.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textColor="#f3f3f3"
+        android:text="Daily Tracker"
+        android:scaleType="centerCrop"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_signin_email"
+            android:layout_width="300dip"
+            android:layout_height="35dip"
+            android:layout_margin="5dip"
+            android:background="@drawable/rounded_box_white"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/txt_signin_password"
+            android:layout_width="300dip"
+            android:layout_height="35dip"
+            android:layout_margin="5dip"
+            android:background="@drawable/rounded_box_white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btn_splash_login"
+            android:layout_width="300dip"
+            android:layout_height="35dip"
+            android:layout_margin="5dip"
+            android:background="@drawable/rounded_box_white"
+            android:text="Log in"
+            android:textColor="#dd0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_splash_forget_password"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="right"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_splash_signup"
+            android:layout_width="300dip"
+            android:layout_height="35dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/rounded_box_white"
+            android:text="Sign Up"
+            android:textColor="#dd0000"
+            android:textStyle="bold" />
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/btn_splash_signfb"-->
+            <!--android:layout_width="300dip"-->
+            <!--android:layout_height="35dip"-->
+            <!--android:layout_marginBottom="10dip"-->
+            <!--android:layout_marginTop="5dip"-->
+            <!--android:background="@drawable/rounded_box_fb"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="10dip"-->
+                <!--android:src="@drawable/image_fb" />-->
+
+            <!--<View-->
+                <!--android:layout_width="1dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="6dip"-->
+                <!--android:layout_marginLeft="10dip"-->
+                <!--android:layout_marginTop="6dip"-->
+                <!--android:background="#ffffff" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Log in with Facebook"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="bold" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>

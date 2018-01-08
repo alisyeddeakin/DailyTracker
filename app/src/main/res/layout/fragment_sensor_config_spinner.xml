@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select a label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#f3f3f3" />
+            <View
+                style="@style/HorizontalLine"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/ab_transparent_example"
+                android:text="Unknown"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/ab_transparent_example"
+                    android:padding="5dp"
+                    android:text="Drinking"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/ab_transparent_example"
+                    android:padding="5dp"
+                    android:text="Eating"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/ab_transparent_example"
+                    android:padding="5dp"
+                    android:text="Scratching"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/HorizontalLine"
+                android:background="@android:color/darker_gray" />
+
+            <include layout="@layout/component_sampling_control" />
+
+            <include layout="@layout/layout_two_button" />
+            <View
+                style="@style/HorizontalLine"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/config_option_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/config_option_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+            <View
+                style="@style/HorizontalLine"
+                android:background="@android:color/darker_gray" />
+
+            <include layout="@layout/component_line_chart" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

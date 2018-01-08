@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#b43c3c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionBarColor">#758cc0</color>
+    <color name="actionBarColorDark">#5c6e96</color>
+    <color name="action_text">#3D3AB0</color>
+    <color name="button_pressed">#940c0c</color>
+
+    <color name="bottombar">@android:color/transparent</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="app_branding_color">#FF4081</color>
+    <color name="LIST_DIVIDER">#E8E7E7</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+
+</resources>

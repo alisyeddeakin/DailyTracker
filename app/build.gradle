@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "deakin.com.example.healthbot"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "3072M"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+repositories {
+
+    ivy {
+        url "https://mbientlab.com/releases/ivyrep"
+        layout "gradle"
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+    mavenCentral()
+    jcenter()
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.mbientlab:metawear:3.2.2'
+    compile 'com.mbientlab.bletoolbox:scanner:0.2.3'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.3'
+    compile 'no.nordicsemi.android:dfu:1.3.1'
+
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.tajchert:nammu:1.1.3'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha3'
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile 'com.github.chenupt.android:springindicator:1.0.2@aar'
+    compile 'com.google.android.gms:play-services-maps:9.0.2'
+    compile 'com.google.android.gms:play-services-location:9.0.2'
+    compile 'com.google.android.gms:play-services-gcm:9.0.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.yqritc:android-scalablevideoview:1.0.4'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.2@aar'
+    compile 'com.wdullaer:materialdatetimepicker:3.1.3'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.flipboard:bottomsheet-core:1.5.3'
+    compile 'com.flipboard:bottomsheet-commons:1.5.3' // optional
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+    testCompile 'junit:junit:4.12'
+}
